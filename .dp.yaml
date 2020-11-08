@@ -1,0 +1,15 @@
+application: dameris
+productOwner: akschopra@mafcarrefour.com
+region: centralindia
+services:
+  - name: adssa
+    config:
+      category: appservice
+      isDockerised: false
+      port: 8080
+      tiersize: S1
+      stack: NODE|10-lts
+      envVariables: []
+      healthcheck: /
+      serviceType: api
+      source: 'https://bitbucket.org/c4hybris/dameris'
